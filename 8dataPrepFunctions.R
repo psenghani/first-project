@@ -97,28 +97,27 @@ NPREPROCESSING_dataset<-function(dataset, scaleFlag, manualTypes,discreetBins, m
   #If there are over 3 bins with less than 1% of the values, then the field is
   #marked as a discreet numeric
   field_types<-NPREPROCESSING_discreetNumeric(dataset,field_types,discreetBins,manualTypes)
-
-  # IF ORDINAL TYPES:
-  # This is a sub-set frame of just the ordinal fields
-  ordinals<-dataset[,which(field_types==TYPE_ORDINAL)]
-
-  #Test if any ordinals are outliers and replace with mean values
-  #Null hyposis is there are no outliers
-  #We reject this if the p-value<significance (i.e. 0.05), confidence=95%
-  ordinals<-NPREPROCESSING_outlier(ordinals,0.5)
-
-  if (scaleFlag==TRUE){
-    # Now z-scale
-    zscaled<-apply(ordinals, MARGIN = 2, FUN = function(X) (scale(X,center=TRUE, scale=TRUE)))
-
-    # Scale in this case to be [0.0,1.0]
-    ordinalReadyforML<-rescale(zscaled,range(0,1))
-  } else
-    {
-    ordinalReadyforML<-ordinals
-    }
-  #We now have a frame called ordinalReadyforML of just the numeric fields, nice and ready for the ML
-
+dfbsjdgfsdjfgsjdf
+asdfgjasfjgasjdfasdf
+sdfhewgasdfksdf
+asfgasgfgsjfs
+asfgsfgkgksf
+sfkssgfsfhksdf
+sdfgsdfggksdf
+sfgsdfksdfgksf
+sdfgsddfkgsdkfs
+fasgdsfksgkfgasf
+dsfgksgfkgkgksdf
+sdfgksdfkkf
+sdfjgsdfgksf
+bsdfkgkgfds
+sdkgkdsfgksdf
+sdfgksdfkkgsdf
+dsfgksdfgkksdf
+fgsdksfgkdsgkfd
+dsfgksdfgksdfkgsdf
+dsfkgdsfgksdfsdfsk
+dsfgsdfgksdfjksdfgk
   # IF SYMBOLIC TYPES:
   # This function undertakes 1-hot-encoding
 
