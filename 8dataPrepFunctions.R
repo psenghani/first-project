@@ -97,11 +97,11 @@ NPREPROCESSING_dataset<-function(dataset, scaleFlag, manualTypes,discreetBins, m
   #If there are over 3 bins with less than 1% of the values, then the field is
   #marked as a discreet numeric
   field_types<-NPREPROCESSING_discreetNumeric(dataset,field_types,discreetBins,manualTypes)
-dfbsjdgfsdjfgsjdf
-asdfgjasfjgasjdfasdf
-sdfhewgasdfksdf
-asfgasgfgsjfs
-asfgsfgkgksf
+mvdfmvbvdfkvk
+fdkdfgkdfhgdfhk
+dfgkdffkghdf
+dfdfkgkdfgk
+gfdfkhgkdfhgk
 sfkssgfsfhksdf
 sdfgsdfggksdf
 sfgsdfksdfgksf
