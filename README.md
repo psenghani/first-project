@@ -8,7 +8,7 @@ The goal of this task is to implement an algorithm to retrieve the relevant Git 
 ## How to run
 
 From within your git repository, run the command from command prompt:
- `python /<path to the script>/git-commit-history.py`
+`python /<path to the script>/git-commit-history.py`
 
 This will ask you to input 3 parameters:
 - Enter the branch name: ( you need to specify the branch name for which you wish to find the commits For eg. development)
